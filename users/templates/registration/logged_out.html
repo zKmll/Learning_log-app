@@ -1,0 +1,10 @@
+{% extends "learning_logs/base.html" %}
+
+{% block page_header %}
+  <h4>Вы выполнили выход.Спасибо за посещение!</h4>
+{% endblock page_header %}
+
+{% block content %}
+    <input type="hidden" name="next"
+      value="{% url 'learning_logs:index' %}" />
+{% endblock content %}
